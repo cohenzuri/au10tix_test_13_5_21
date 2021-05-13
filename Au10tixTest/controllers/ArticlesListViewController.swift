@@ -23,8 +23,27 @@ class ArticlesListViewController: UIViewController {
         super.viewDidLoad()
         
         self.setupUI()
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+       // self.getArticles()
+    }
+    
+    
+//    func getArticles() {
+//
+//        NetworkingManager.sheredInstance.downloadJson { articles in
+//
+//            self.articlesArray = articles
+//
+//            DispatchQueue.main.async {
+//
+//                self.tableView.reloadData()
+//            }
+//        }
+//    }
+   
     func setupUI() {
         
         self.tableView.delegate = self
@@ -77,8 +96,4 @@ extension ArticlesListViewController: UITableViewDelegate, UITableViewDataSource
         return 350
     }
 }
-
-
-
-
 

@@ -33,13 +33,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wI-bh-BqQ">
-                                <rect key="frame" x="20" y="388" width="374" height="176"/>
+                                <rect key="frame" x="20" y="264" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Slv-60-bFr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho1-B7-Ib1">
-                                <rect key="frame" x="106" y="602.5" width="236" height="20.5"/>
+                                <rect key="frame" x="106" y="602.5" width="236" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f4Q-mu-xmt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,11 +56,11 @@
                         <constraints>
                             <constraint firstItem="Ho1-B7-Ib1" firstAttribute="leading" secondItem="wTl-Sg-JHN" secondAttribute="leading" constant="106" id="0le-Do-een"/>
                             <constraint firstItem="Ho1-B7-Ib1" firstAttribute="top" secondItem="1wI-bh-BqQ" secondAttribute="bottom" constant="38.5" id="8lH-ty-ZSz"/>
-                            <constraint firstItem="1wI-bh-BqQ" firstAttribute="top" secondItem="wTl-Sg-JHN" secondAttribute="top" constant="300" id="8lk-h1-VkL"/>
+                            <constraint firstItem="1wI-bh-BqQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wTl-Sg-JHN" secondAttribute="top" constant="20" id="8lk-h1-VkL"/>
                             <constraint firstItem="wTl-Sg-JHN" firstAttribute="trailing" secondItem="1wI-bh-BqQ" secondAttribute="trailing" constant="20" id="RyQ-Zq-Iih"/>
                             <constraint firstItem="1wI-bh-BqQ" firstAttribute="leading" secondItem="wTl-Sg-JHN" secondAttribute="leading" constant="20" id="SuY-n4-is8"/>
                             <constraint firstItem="wTl-Sg-JHN" firstAttribute="bottom" secondItem="1wI-bh-BqQ" secondAttribute="bottom" constant="298" id="d2B-Yu-zQk"/>
-                            <constraint firstItem="wTl-Sg-JHN" firstAttribute="bottom" secondItem="Ho1-B7-Ib1" secondAttribute="bottom" constant="239" id="fXh-6Y-JNL"/>
+                            <constraint firstItem="wTl-Sg-JHN" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ho1-B7-Ib1" secondAttribute="bottom" constant="20" id="fXh-6Y-JNL"/>
                             <constraint firstItem="wTl-Sg-JHN" firstAttribute="trailing" secondItem="Ho1-B7-Ib1" secondAttribute="trailing" constant="72" id="qAM-G9-P24"/>
                         </constraints>
                     </view>

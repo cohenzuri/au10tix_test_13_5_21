@@ -13,7 +13,7 @@ class NetworkingManager {
     
     func downloadJson(complition: @escaping ([Article]) -> ()) {
         
-        let jsonUrlString = "https://newsapi.org/v2/everything?q=tesla&from=2021-04-12&sortBy=publishedAt&apiKey=467e2d3d2938489bb1184b203edad265"
+        let jsonUrlString = "https://newsapi.org/v2/everything?q=tesla&from=2021-04-13&sortBy=publishedAt&apiKey=467e2d3d2938489bb1184b203edad265"
         
         guard let url = URL(string: jsonUrlString) else { return }
         

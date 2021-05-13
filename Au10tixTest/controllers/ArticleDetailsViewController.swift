@@ -43,8 +43,8 @@ class ArticleDetailsViewController: UIViewController {
     
     func getImageByUrl(imageStringUrl: String) -> UIImage? {
         
-        let imageUrl = URL(string: imageStringUrl)
-        if let data = try? Data(contentsOf: imageUrl!) {
+        guard let imageUrl = URL(string: imageStringUrl) else { return nil }
+        if let data = try? Data(contentsOf: imageUrl) {
             return UIImage(data: data)
         } else {
             return nil
