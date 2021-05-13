@@ -26,6 +26,7 @@ class ArticlesListViewController: UIViewController {
     }
     
     func setupUI() {
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.registerNibs()
